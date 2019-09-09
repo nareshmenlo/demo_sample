@@ -1,0 +1,33 @@
+<!-- <input id="fileInput" type="file" class="ng-hide">
+<md-button id="uploadButton" class="md-raised md-primary" aria-label="attach_file">
+    Choose file
+</md-button>
+<md-input-container md-no-float>
+    <input id="textInput" ng-model="fileName" type="text" placeholder="No file chosen" ng-readonly="true">
+</md-input-container>
+<button mat-raised-button (click)="openDialog()">Pick one</button> -->
+<!-- <div class="container">
+    File: <input type="text" placeholder="File Name" name="filename" /> <input type="file" name="file" />
+    <button mat-raised-button (click)="openDialog()">Upload</button>
+</div> -->
+
+<mat-card class="card-height">
+    <mat-card-content>
+        <!-- <h2 class="upload-h2">Result</h2> -->
+        <section class="upload-section m-t-30" >
+            File:
+            <mat-form-field class="m-l-20">
+                <input matInput>
+            </mat-form-field>
+            <button mat-raised-button class="m-l-20" (click)="openDialog()">browse</button>
+        </section>
+        <section class="upload-section">
+            <button mat-raised-button>upload</button>
+        </section>
+        <section class="upload-section">
+            <mat-progress-bar class="upload-margin" [color]="color" [mode]="mode" [value]="value"
+                [bufferValue]="bufferValue">
+            </mat-progress-bar>
+        </section>
+    </mat-card-content>
+</mat-card>
