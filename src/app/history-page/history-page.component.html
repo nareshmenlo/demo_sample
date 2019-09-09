@@ -1,17 +1,15 @@
 <mat-card class="card-height">
     <mat-card-content>
         <section class="upload-section">
-            <button mat-raised-button>clear</button>
+            <button mat-raised-button (click)="clearHistory()">clear</button>
         </section>
-        <section class="upload-section">
-            <ol>
-                <li>
-                    file 1.txt
-                </li>
-                <li>
-                    file 1.txt
+        <section class="upload-section m-t-30">
+            <!-- {{uploadedFiles.length}} -->
+            <ol *ngIf="uploadedFiles.length>0">
+                <li *ngFor="let filename of uploadedFiles;">
+                    {{filename}}
                 </li>
             </ol>
-        </section>        
+        </section>
     </mat-card-content>
 </mat-card>

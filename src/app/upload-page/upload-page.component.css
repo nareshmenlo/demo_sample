@@ -1,27 +1,51 @@
 .upload-h2 {
-    margin: 20px;
+  margin: 20px;
 }
 
 .m-t-30 {
-    margin-top: 30px !important;
+  margin-top: 30px !important;
 }
 
 .upload-section {
-    display: flex;
-    align-content: center;
-    align-items: center;
-    height: 60px;
-    margin: 20px;
+  display: flex;
+  align-content: center;
+  align-items: center;
+  height: 60px;
+  margin: 20px;
 }
 
 .upload-margin {
-    margin: 0 10px;
+  margin: 0 10px;
 }
-
+.upload-success {
+  margin-left: 20px;
+  color: green;
+  white-space: nowrap;
+}
+.progress-bar {
+  width: 50%;
+}
 .m-l-20 {
-    margin-left: 30px;
+  margin-left: 30px;
 }
 
 .browseBtn {
-    margin-left: 15px;
+  margin-left: 15px;
+}
+
+::ng-deep .mat-progress-bar-fill::after {
+  background-color: green;
+}
+
+::ng-deep .mat-progress-bar-buffer {
+  background: #e4e8eb;
+}
+.progress-bar .mat-progress-bar {
+  height: 20px !important;
+  border-radius: 2px;
+}
+
+::ng-deep .mat-progress-bar {
+  border-radius: 2px;
+  height: 40px;
 }

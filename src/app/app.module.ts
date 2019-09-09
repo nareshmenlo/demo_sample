@@ -13,6 +13,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {TreeModuleModule } from './tree-module/tree-module.module';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { DataService } from './data.service';
 import { UploadPageComponent } from './upload-page/upload-page.component';
 import { UploadPageComponentDialog } from './upload-page/tree-view-dialog';
 import { HistoryPageComponent } from './history-page/history-page.component';
@@ -43,7 +44,7 @@ import { TreeExplorerComponent } from './tree-explorer/tree-explorer.component';
     TreeModuleModule
   ],
   entryComponents: [UploadPageComponentDialog],
-  providers: [],
+  providers: [DataService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
